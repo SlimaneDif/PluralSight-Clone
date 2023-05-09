@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main .login-side{
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 25px 52px;
+}
+.logo{
+    max-width: 100%;
+}
+form .input-boxes{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 11.5px;
+    align-items: center;
+    flex-direction: column;
+}
+.input-boxes .box{
+    width: 90%;
+    height: 45px;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+}
+.input-boxes .box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgba(126, 129, 126, 0.50);
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.input-boxes .box input:focus{
+    border: 2px solid rgba(126, 129, 126, 1);
+}
+.box label{
+  position: absolute;
+  top: -25px;
+left: 1px;  
+color: white;
+z-index: 10;
+}
+.acc-btn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background-color: #0092ff;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+}
+.additional-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+.additional-links a{
+    color: #0092ff;
+    margin-top: 12px;
+    text-decoration: none;
+}
+.additional-links a:hover{
+    text-decoration: underline;
+}
+.horizontal-ruler{
+    background-color: rgba(126, 129, 126, 0.50);
+    width: 90%;
+    height: 1px;
+}
+.newacc-box{
+    width: 100%;
+    height: 45px;
+}
+.newacc-btn{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(89, 92, 89, 0.25);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    margin: 0 auto;
+    display: block;
+}
+.about-side{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.image{
+    width: 590px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+.trial-btn{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 18.2px;
+    background-color: #d5273f;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 50px;
+}
+@media only screen and (max-width: 1024px){
+     main{
+        grid-template-columns: 50% 50%;
+     }
+}
+@media only screen and (max-width: 767px){
+  main{
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+}
